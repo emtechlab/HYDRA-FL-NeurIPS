@@ -1,0 +1,12 @@
+We have modified the original FedNTD code to include HYDRA in it.
+
+1. Install necessary requirements.
+2. Run the command python ./main.py --config_path ./config/fedntd.json to run fedntd or replace fedntd.json with fedavg.json to run fedavg.
+
+3. In BaseServer.py in the algorithms directory, comment or uncomment lines 90-92 to select no-attack and attack settings, respectively.
+
+4. The loss function coefficients can be modified in algorithms->fedntd->criterion.py in the forward function.
+
+5. The config file is config->fedntd.json. You can change the parameters there if you wish to.
+
+6. These steps were performed to generate the results for FedNTD. Set the seed to 1999.
